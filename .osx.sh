@@ -139,3 +139,7 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+for app in "Activity Monitor" "Dock" "Finder" "Safari" "Spectacle" "SystemUIServer" "Terminal"; do
+	killall "${app}" &> /dev/null
+done
