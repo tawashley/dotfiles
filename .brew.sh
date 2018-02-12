@@ -26,6 +26,7 @@ echo Installing Git…
 brew install git
 
 # Install Node Version Manager
+echo Installing nvm
 brew install nvm
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bashrc
 
@@ -35,6 +36,8 @@ brew install caskroom/cask/brew-cask
 
 # Install Cask versions for beta version of apps
 brew tap caskroom/versions
+
+brew install zsh
 
 # Remove outdated versions from the cellar
 brew cleanup
