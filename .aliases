@@ -19,9 +19,6 @@ alias edit_bash='nano ~/.bash_profile'
 alias edit_aliases='nano ~/.aliases'
 
 alias mac.code='cd ~/Documents/mac.code'
-alias vm.code='cd /Volumes/vm.code'
-alias ssh-vm='ssh tristanashley@192.168.0.185'
-alias ridge='cd ~/Documents/cartridge'
 
 alias edit_hosts='sudo nano /etc/hosts'
 alias reload_hosts='dscacheutil -flushcache'
