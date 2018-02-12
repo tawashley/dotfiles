@@ -12,6 +12,12 @@ echo Installing Homebrew \(gets Xcode cli developer tools too\)…
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo xcodebuild -license
 
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
 # Tap versions for alternate versions of applications
 brew tap homebrew/versions
 
