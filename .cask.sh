@@ -8,16 +8,6 @@
 #
 #
 
-#!/usr/bin/env bash
-#
-# ~/.cask.sh
-#
-# This script installs applications using Homebrew Cask: http://caskroom.io/search
-# Some apps rely on homebrew-versions: https://github.com/caskroom/homebrew-versions
-# `brew tap caskroom/versions` is ran in `.brew.sh`
-#
-#
-
 # Development apps
 echo Installing dev apps…
 brew cask install adobe-creative-cloud
