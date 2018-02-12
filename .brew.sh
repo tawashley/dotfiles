@@ -37,6 +37,9 @@ brew install caskroom/cask/brew-cask
 # Install Cask versions for beta version of apps
 brew tap caskroom/versions
 
+# z hopping around folders
+brew install z
+
 brew install zsh
 
 # Remove outdated versions from the cellar
