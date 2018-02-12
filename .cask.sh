@@ -10,29 +10,20 @@
 
 # Development apps
 echo Installing dev apps…
-brew cask install --appdir="/Applications" adobe-creative-cloud
-brew cask install --appdir="/Applications" imageoptim
-brew cask install --appdir="/Applications" iterm2
-#brew cask install --appdir="/Applications" sourcetree
-brew cask install --appdir="/Applications" vmware-fusion
-# Uncomment the text editor you’d like
-# brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" sublime-text3
+brew cask install adobe-creative-cloud
+brew cask install imageoptim
+brew cask install iterm2
+brew cask install visual-studio-code
 
 # Browsers
 echo Installing browsers…
-brew cask install --appdir="/Applications" firefox
-# brew cask install --appdir="/Applications" firefox-nightly
-brew cask install --appdir="/Applications" google-chrome
-# brew cask install --appdir="/Applications" google-chrome-canary
-# brew cask install --appdir="/Applications" opera
+brew cask install firefox
+brew cask install google-chrome
 
 # Additional apps
 echo Installing some additional apps…
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" sonos
-brew cask install --appdir="/Applications" spotify
+brew cask install slack
+brew cask install spotify
 
 brew cask install spectacle
 brew cask install alfred
