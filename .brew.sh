@@ -35,3 +35,6 @@ brew install caskroom/cask/brew-cask
 
 # Install Cask versions for beta version of apps
 brew tap caskroom/versions
+
+# Remove outdated versions from the cellar
+brew cleanup
