@@ -17,8 +17,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Uncomment and add your user if you wish
 # npm adduser xxxxxx
 
-npm i bower -g
-npm i grunt grunt-cli -g
-npm i gulp -g
-npm i mocha -g
-npm i phantomjs -g
+npm i gulp-cli -g
+npm i browser-sync -g
+npm i nodemon -g
+npm i browser-sync -g
+npm i commitizen -g
