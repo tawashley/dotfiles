@@ -1,0 +1,82 @@
+// Location $HOME/Library/Application Support/Code/User
+// Place your settings in this file to overwrite the default settings
+{
+    //Cursor go block or go home
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "phase",
+    "editor.rulers": [
+        100
+    ],
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.minimap.enabled": true,
+    "editor.snippetSuggestions": "top",
+    // "editor.formatOnPaste": true,
+    // "editor.stablePeek": true,
+    "explorer.openEditors.visible": 0,
+    // Is git enabled
+    // "git.enabled": false,
+    // Path to the git executable
+    // "git.path": null,
+    // Whether auto fetching is enabled.
+    "git.autofetch": false,
+    "files.associations": {
+        "*.hbs": "html"
+    },
+    //Use iTerm for external terminal
+    "terminal.external.osxExec": "iTerm.app",
+    "files.exclude": {
+        "**/.dll": true,
+        //Exclude .NET debug artefacts
+        "**/bin/Debug/**/*.*": true
+    },
+    "search.exclude": {
+      "**/build": true,
+      "**/obj": true,
+      "node_modules/**": true,
+      "node_modules": true,
+      "**/backstop_data/bitmaps_reference/**/*": true,
+      "**/backstop_data/bitmaps_test/**/*": true,
+      "**/backstop_data/ci_report/**/*": true,
+      "**/backstop_data/html_report/**/*": true,
+      "**/static-build/coverage/**/*": true,
+      //Exclude .NET debug artefacts
+      "**/bin/Debug": true
+    },
+    "extensions.autoUpdate": true,
+    "explorer.autoReveal": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.quickOpen.closeOnFocusLost": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-great-icons",
+    "window.newWindowDimensions": "maximized",
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "window.zoomLevel": 0,
+    "atomKeymap.promptV3Features": true,
+    "editor.formatOnPaste": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.smoothScrolling": true,
+    "macros": {
+        "commentThenMoveDownOneLine": [
+            "editor.action.commentLine",
+            "cursorDown"
+        ]
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.panel.location": "bottom",
+    "editor.renderWhitespace": "all",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.insertSpaces": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    }
+}

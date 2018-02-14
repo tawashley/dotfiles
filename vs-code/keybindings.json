@@ -1,0 +1,24 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "cmd+y",
+        "command": "redo",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+ctrl+s",
+        "command": "workbench.action.files.saveAll"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "editor.emmet.action.expandAbbreviation"
+    },
+    {
+        "key": "cmd+/",
+        "command": "macros.commentThenMoveDownOneLine"
+    },
+    {
+        "key": "ctrl+cmd+p",
+        "command": "projectManager.listProjectsNewWindow"
+    }
+]
