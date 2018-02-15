@@ -9,7 +9,7 @@ The structure and base set of files here are heavily inspired by [Paul Irish's](
 - [ ] Add in 'Path Finder.app' preferences
 - [x] Add VS Code to path
 - [ ] Copy over iTerm 2 Solarised colour scheme
-- [ ] Create `.vscode`
+- [x] Create `.vscode`
   - [ ] Add all VS extensions using `code --install-extension {name}`
   - [ ] Copy over `vs-code/settings.json` to `$HOME/Library/Application Support/Code/User`
   - [ ] Copy over `vs-code/keybindings.json` to `$HOME/Library/Application Support/Code/User`
