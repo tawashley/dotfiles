@@ -8,7 +8,7 @@ The structure and base set of files here are heavily inspired by [Paul Irish's](
 - [x] Add in 'Spectacle.app' preferences
 - [ ] Add in 'Path Finder.app' preferences
 - [x] Add VS Code to path
-- [x] Copy over iTerm 2 Solarised colour scheme
+- [ ] Copy over iTerm 2 Solarised colour scheme
 - [ ] Create `.vscode`
   - [ ] Add all VS extensions using `code --install-extension {name}`
   - [ ] Copy over `vs-code/settings.json` to `$HOME/Library/Application Support/Code/User`
