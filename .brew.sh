@@ -17,9 +17,6 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-# Tap versions for alternate versions of applications
-brew tap homebrew/versions
-
 # Install Git
 echo Installing Git…
 brew install git
