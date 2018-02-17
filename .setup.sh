@@ -55,5 +55,6 @@ fi
 ./.nvm.sh
 ./.npm.sh
 ./.vscode.sh
+./.pathfinder.sh
 
 sh .osx
