@@ -10,8 +10,8 @@ The structure and base set of files here are heavily inspired by [Paul Irish's](
 - [x] Add VS Code to path
 - [ ] Copy over iTerm 2 Solarised colour scheme
 - [x] Create `.vscode`
-  - [ ] Add all VS extensions using `code --install-extension {name}`
-  - [ ] Copy over `vs-code/settings.json` to `$HOME/Library/Application Support/Code/User`
-  - [ ] Copy over `vs-code/keybindings.json` to `$HOME/Library/Application Support/Code/User`
+  - [x] Add all VS extensions using `code --install-extension {name}`
+  - [x] Copy over `vs-code/settings.json` to `$HOME/Library/Application Support/Code/User`
+  - [x] Copy over `vs-code/keybindings.json` to `$HOME/Library/Application Support/Code/User`
 - [ ] Consider copying all files into `~/dotfiles` and symlinking individual files
 - [ ] Sort out install strategy - git-less command
