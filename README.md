@@ -6,7 +6,7 @@ The structure and base set of files here are heavily inspired by [Paul Irish's](
 ## TODO
 
 - [x] Add in 'Spectacle.app' preferences
-- [ ] Add in 'Path Finder.app' preferences
+- [x] Add in 'Path Finder.app' preferences
 - [x] Add VS Code to path
 - [ ] Copy over iTerm 2 Solarised colour scheme
 - [x] Create `.vscode`
