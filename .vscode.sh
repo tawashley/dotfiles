@@ -1,5 +1,7 @@
 # extensions
 
+echo Installing VS Code extensions…
+
 code --install-extension 2gua.rainbow-brackets
 code --install-extension EditorConfig.EditorConfig
 code --install-extension HookyQR.beautify
@@ -28,7 +30,16 @@ code --install-extension wayou.vscode-todo-highlight
 code --install-extension yzhang.markdown-all-in-one
 
 # themes
+
+echo Installing VS Code themes…
+
 code --install-extension SmukkeKim.theme-setimonokai
 code --install-extension gerane.Theme-Solarized-dark
 code --install-extension kamranmackey.cobalt2-Theme
 code --install-extension zhuangtongfa.Material-theme
+
+# Copy over config files
+echo Copying over VS Code Settings/Keybindings files
+
+cp ./vs-code/settings.json $HOME/Library/Application Support/Code/User
+cp ./vs-code/keybindings.json $HOME/Library/Application Support/Code/User
