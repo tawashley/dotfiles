@@ -57,4 +57,4 @@ fi
 ./.vscode.sh
 ./.pathfinder.sh
 
-sh .osx
+sh .osx.sh
