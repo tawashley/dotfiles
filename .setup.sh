@@ -10,6 +10,7 @@
 echo Running through mac setup steps…
 
 mkdir -p ~/mac.code
+mkdir ~/.nvm
 
 ##############################################################################################################
 ### XCode Command Line Tools
