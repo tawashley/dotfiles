@@ -3,3 +3,7 @@
 # This file is loaded via .bash_profile
 #
 #
+# nano as default
+export EDITOR="nano"
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
