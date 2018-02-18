@@ -15,7 +15,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # iTerm 2 colour scheme
-open "${HOME}/Solarized Dark.itermcolors"
+open "${HOME}/Solarized Dark High Contrast.itermcolors"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
