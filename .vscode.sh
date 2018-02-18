@@ -41,5 +41,5 @@ code --install-extension zhuangtongfa.Material-theme
 # Copy over config files
 echo Copying over VS Code Settings/Keybindings files
 
-cp ./vs-code/settings.json $HOME/Library/Application Support/Code/User
-cp ./vs-code/keybindings.json $HOME/Library/Application Support/Code/User
+cp "./vs-code/settings.json" "$HOME/Library/Application Support/Code/User"
+cp "./vs-code/keybindings.json" "$HOME/Library/Application Support/Code/User"
