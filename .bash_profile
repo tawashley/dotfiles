@@ -13,3 +13,5 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
+
+. "/usr/local/opt/nvm/nvm.sh"
