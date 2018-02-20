@@ -14,4 +14,6 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # Run twolfson/sexy-bash-prompt
 . ~/.bash_prompt
 
-. "/usr/local/opt/nvm/nvm.sh"
+# Hook up nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
