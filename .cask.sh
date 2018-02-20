@@ -37,6 +37,7 @@ brew cask install path-finder
 brew cask install appcleaner
 brew cask install caffeine
 brew cask install cyberduck
+brew cask install ubersicht
 
 # Clean up
 echo Cleaning up…
