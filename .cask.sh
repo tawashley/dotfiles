@@ -14,6 +14,7 @@ brew cask install adobe-creative-cloud
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install visual-studio-code
+brew cask install beyondcompare
 
 # Browsers
 echo Installing browsers…
