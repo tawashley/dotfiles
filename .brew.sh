@@ -45,6 +45,7 @@ brew tap caskroom/versions
 brew install z
 
 brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Remove outdated versions from the cellar
 brew cleanup
