@@ -20,4 +20,4 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 npm i gulp-cli -g
 npm i browser-sync -g
 npm i nodemon -g
-npm i commitizen -g
+npm i serve -g
