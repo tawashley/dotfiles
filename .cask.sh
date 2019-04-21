@@ -8,6 +8,9 @@
 #
 #
 
+echo "---> Cask"
+echo ""
+
 # Development apps
 echo Installing dev apps…
 brew cask install adobe-creative-cloud

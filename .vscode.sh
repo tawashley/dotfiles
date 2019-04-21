@@ -1,5 +1,8 @@
 # extensions
 
+echo "---> VS Code preferences"
+echo ""
+
 echo Installing VS Code extensions…
 
 code --install-extension 2gua.rainbow-brackets

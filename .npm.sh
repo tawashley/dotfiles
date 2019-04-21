@@ -8,6 +8,9 @@
 #
 #
 
+echo "---> Global node packages"
+echo ""
+
 # Ask for the administrator password upfront
 sudo -v
 

@@ -7,6 +7,9 @@
 #
 #
 
+echo "---> Homebrew"
+echo ""
+
 # Install Homebrew
 echo Installing Homebrew \(gets Xcode cli developer tools too\)…
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
