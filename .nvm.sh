@@ -6,8 +6,7 @@
 #
 #
 
-# Install 8.9.4
-nvm install 8.9.4
+nvm install 10.15.3
 
 # Set as system default version
-nvm alias default 8.9.4
+nvm alias default 10.15.3
