@@ -3,15 +3,8 @@
 
 The structure and base set of files here are heavily inspired by [Paul Irish's](https://github.com/paulirish/dotfiles) and [Mathias Bynens'](https://github.com/mathiasbynens/dotfiles) own dotfiles, along with code picked and plucked from various areas to create something that is just right with my picky system setup
 
-## TODO
+## No git? Not problem
 
-- [x] Add in 'Spectacle.app' preferences
-- [x] Add in 'Path Finder.app' preferences
-- [x] Add VS Code to path
-- [ ] Copy over iTerm 2 Solarised colour scheme
-- [x] Create `.vscode`
-  - [x] Add all VS extensions using `code --install-extension {name}`
-  - [x] Copy over `vs-code/settings.json` to `$HOME/Library/Application Support/Code/User`
-  - [x] Copy over `vs-code/keybindings.json` to `$HOME/Library/Application Support/Code/User`
-- [ ] Consider copying all files into `~/dotfiles` and symlinking individual files
-- [ ] Sort out install strategy - git-less command
+```bash
+cd; curl -#L https://github.com/tawashley/dotfiles/tarball/master | tar -xzv --strip-components 1
+```
