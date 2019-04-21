@@ -4,7 +4,7 @@
 #
 # Main script that runs every other script
 # Run this to 'set and forget' setting up a new machine
-# 
+#
 #
 
 echo Running through mac setup steps…
@@ -56,6 +56,5 @@ fi
 ./.nvm.sh
 ./.npm.sh
 ./.vscode.sh
-./.pathfinder.sh
 
 sh .osx.sh
