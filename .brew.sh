@@ -30,7 +30,7 @@ brew install nvm
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bashrc
 
 # Install Brew Cask for managing other apps
-echo Installing Brew Cask…
+echo Installing Brew Cask and friends…
 brew install caskroom/cask/brew-cask
 
 brew install homebrew/dupes/nano
@@ -40,6 +40,8 @@ brew install homebrew/dupes/screen
 
 # Install Cask versions for beta version of apps
 brew tap caskroom/versions
+
+echo "Installing z, zsh, oh-my-zsh"
 
 # z hopping around folders
 brew install z
