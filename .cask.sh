@@ -38,6 +38,8 @@ brew cask install appcleaner
 brew cask install caffeine
 brew cask install cyberduck
 brew cask install ubersicht
+brew cask install nightowl
+brew cask install kap
 
 # Clean up
 echo Cleaning up…
