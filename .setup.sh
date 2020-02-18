@@ -67,3 +67,7 @@ source ~/.bash_profile
 sh .osx.sh
 
 ./.zsh.sh
+
+echo "All done..."
+echo "That is unless there were any error messages"
+echo "Restart your mac and you should be good"
