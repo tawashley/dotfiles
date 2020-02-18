@@ -606,29 +606,5 @@ defaults write com.divisiblebyzero.Spectacle UndoLastMove -data 62706c6973743030
 defaults write com.divisiblebyzero.Spectacle StartAtLogin -bool true
 
 echo "✅ Spectacle preferences"
-
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Activity Monitor" \
-	"Address Book" \
-	"Calendar" \
-	"cfprefsd" \
-	"Contacts" \
-	"Dock" \
-	"Finder" \
-	"Google Chrome Canary" \
-	"Google Chrome" \
-	"Mail" \
-	"Messages" \
-	"Photos" \
-	"Safari" \
-	"Spectacle" \
-	"SystemUIServer" \
-	"Terminal" \
-	"iCal"; do
-	killall "${app}" &> /dev/null
-done
-echo "✅ Purge affected apps"
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo "OSX settings are Donezo."
+echo "Note that some of these changes require a logout/restart to take effect."
