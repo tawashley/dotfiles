@@ -37,6 +37,3 @@ brew install homebrew/dupes/nano
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-
-# Install Cask versions for beta version of apps
-brew tap caskroom/versions
