@@ -2,7 +2,7 @@
 #
 # ~/.cask.sh
 #
-# This script installs applications using Homebrew Cask: http://caskroom.io/search
+# This script installs applications using Homebrew Cask: https://formulae.brew.sh/cask/
 # Some apps rely on homebrew-versions: https://github.com/caskroom/homebrew-versions
 # `brew tap caskroom/versions` is ran in `.brew.sh`
 #
@@ -17,7 +17,7 @@ brew cask install adobe-creative-cloud
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install visual-studio-code
-brew cask install beyondcompare
+brew cask install beyond-compare
 
 # Browsers
 echo Installing browsers…
