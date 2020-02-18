@@ -62,3 +62,5 @@ echo "Go."
 ./.vscode.sh
 
 sh .osx.sh
+
+./.zsh.sh

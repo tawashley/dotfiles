@@ -40,14 +40,3 @@ brew install homebrew/dupes/screen
 
 # Install Cask versions for beta version of apps
 brew tap caskroom/versions
-
-echo "Installing z, zsh, oh-my-zsh"
-
-# z hopping around folders
-brew install z
-
-brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Remove outdated versions from the cellar
-brew cleanup
