@@ -57,6 +57,9 @@ echo "Go."
 
 ./.brew.sh
 ./.cask.sh
+
+source ~/.bash_profile
+
 ./.nvm.sh
 ./.npm.sh
 ./.vscode.sh
