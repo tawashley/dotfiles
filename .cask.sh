@@ -32,7 +32,7 @@ brew cask install vlc
 # Productivity apps
 echo Installing productivity apps…
 brew cask install slack
-brew cask install spectacle
+brew cask install rectangle
 brew cask install alfred
 brew cask install the-unarchiver
 brew cask install recordit
