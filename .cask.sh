@@ -13,7 +13,6 @@ echo ""
 
 # Development apps
 echo Installing dev apps…
-brew cask install adobe-creative-cloud
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install visual-studio-code
@@ -35,14 +34,10 @@ brew cask install slack
 brew cask install rectangle
 brew cask install alfred
 brew cask install the-unarchiver
-brew cask install recordit
 brew cask install monolingual
 brew cask install path-finder
 brew cask install appcleaner
-brew cask install caffeine
-brew cask install cyberduck
-brew cask install ubersicht
-brew cask install nightowl
+#brew cask install ubersicht
 brew cask install kap
 
 # Clean up
