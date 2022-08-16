@@ -12,7 +12,7 @@ echo ""
 
 # Install Homebrew
 echo Installing Homebrew \(gets Xcode cli developer tools too\)…
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -31,7 +31,6 @@ echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bashrc
 
 # Install Brew Cask for managing other apps
 echo Installing Brew Cask and friends…
-brew install caskroom/cask/brew-cask
 
 brew install homebrew/dupes/nano
 brew install homebrew/dupes/grep
