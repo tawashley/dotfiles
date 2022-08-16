@@ -6,33 +6,99 @@
 #
 
 alias cl='clear'
-alias ll='ls -lG'
-alias lla='ls -lGa'
-alias ..='cd ../'
-alias ....='cd ../../'
-alias ~='cd ~'
+alias ll='ls -lGFh'
+alias lla='ls -lGFha'
 alias desktop='cd ~/Desktop'
 alias hist='history | grep'
 
-alias reload_bash='source ~/.bash_profile'
-alias edit_bash='nano ~/.bash_profile'
-alias edit_aliases='nano ~/.aliases'
+alias reload_zsh='source ~/.zshrc'
+alias edit_zsh='code ~/.zshrc'
+alias edit_aliases='code ~/.aliases'
+alias edit_exports='code ~/.exports'
 
-alias mac.code='cd ~/Documents/mac.code'
+alias mac.code='cd ~/mac.code'
 
 alias edit_hosts='sudo nano /etc/hosts'
 alias reload_hosts='dscacheutil -flushcache'
 
+alias docker_prune="docker system prune -a"
+
 #Git
 alias ga="git add -A"
 alias gb="git branch"
+alias gu="git pull"
+alias gur="git pull --rebase"
 alias gc="git commit -m"
+alias gca="git commit --amend -m"
 alias gd="git diff"
 alias gl="git log --graph --name-status"
+alias gls="git log --pretty=\"--%n(%h) %Cgreen%aD - %Creset%an%n%Cred%s\""
 alias gm="git mv"
 alias go="git checkout"
 alias gp="git push"
 alias gpb="git push -u origin"
 alias gs="git status"
-alias git_nuke="git clean -f -d && git reset HEAD --hard && git status"
 
+function git_patch_create() {
+    git diff > $1.patch && mv $1.patch $HOME/mac.code/_git-patch-files/$1.patch && echo "> Patch file '$1.patch' created in '$HOME/mac.code/_git-patch-files'"
+}
+
+function git_patch_create_master_diff() {
+    git diff master...$(git rev-parse --abbrev-ref HEAD) > $1.patch && mv $1.patch $HOME/mac.code/_git-patch-files/$1.patch && echo "> Patch file '$1.patch' created in '$HOME/mac.code/_git-patch-files'"
+}
+
+function git_patch_create_staged_diff() {
+    git diff --cached > $1.patch && mv $1.patch $HOME/mac.code/_git-patch-files/$1.patch && echo "> Patch file '$1.patch' created in '$HOME/mac.code/_git-patch-files'"
+}
+
+function git_patch_apply() {
+    git apply -3 $HOME/mac.code/_git-patch-files/$1.patch && echo "> Patch file '$1.patch' changes applied" && git status
+}
+
+function git_patch_show_files() {
+    #(cd $HOME/mac.code/_git-patch-files > /dev/null; echo; ls -1 | grep ".patch" | sed -e 's/\.patch$//'; echo;)
+
+    echo; ls -lt -1 ~/mac.code/_git-patch-files | sed 's/\(.*\)\..*/\1/'; echo;
+}
+
+function git_patch_open_files() {
+    open $HOME/mac.code/_git-patch-files
+}
+
+function git_pull_upstream_master() {
+    git pull upstream master
+}
+
+function git_nuke() {
+    git clean -f -d
+    git reset HEAD --hard
+    git status
+}
+
+function git_cleanup_branches() {
+    git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done
+}
+
+function show_on_port() {
+   lsof -i :$1 && lsof -i :$1 | awk 'NR!=1 {print $2}'
+}
+
+function kill_on_port() {
+   lsof -i :$1 && lsof -i :$1 | awk 'NR!=1 {print $2}' | xargs kill && echo "All processes using port:$1 have been terminated..."
+}
+
+#seq 1 10 | xargs -I{} npm run backstop
+
+#yarn
+alias ys="yarn start"
+alias yi="yarn"
+alias ya="yarn add"
+alias yad="yarn add -D"
+alias yb="yarn build"
+alias yt="yarn test"
+alias ytr="yarn test:run --verbose"
+alias ytc="yarn test:coverage"
+alias yto="CI=true yarn test"
+alias yv="yarn verify"
+alias yus="yarn test:update-snapshot"
+alias yj="TZ=UTC yarn run react-scripts test"
