@@ -12,7 +12,7 @@ echo "Installing z, zsh, oh-my-zsh"
 brew install z
 
 brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Remove outdated versions from the cellar
 brew cleanup
