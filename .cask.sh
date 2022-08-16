@@ -13,32 +13,32 @@ echo ""
 
 # Development apps
 echo Installing dev apps…
-brew cask install imageoptim
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install beyond-compare
+brew install --cask imageoptim
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask beyond-compare
 
 # Browsers
 echo Installing browsers…
-brew cask install firefox
-brew cask install google-chrome
+brew install --cask firefox
+brew install --cask google-chrome
 
 # Additional apps
 echo Installing media apps…
-brew cask install spotify
-brew cask install vlc
+brew install --cask spotify
+brew install --cask vlc
 
 # Productivity apps
 echo Installing productivity apps…
-brew cask install slack
-brew cask install rectangle
-brew cask install alfred
-brew cask install the-unarchiver
-brew cask install monolingual
-brew cask install path-finder
-brew cask install appcleaner
-#brew cask install ubersicht
-brew cask install kap
+brew install --cask slack
+brew install --cask rectangle
+brew install --cask alfred
+brew install --cask the-unarchiver
+brew install --cask monolingual
+brew install --cask path-finder
+brew install --cask appcleaner
+#brew install --cask ubersicht
+brew install --cask kap
 
 # Clean up
 echo Cleaning up…
