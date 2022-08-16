@@ -32,7 +32,7 @@ echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bashrc
 # Install Brew Cask for managing other apps
 echo Installing Brew Cask and friends…
 
-brew install homebrew/dupes/nano
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install nano
+brew install grep
+brew install openssh
+#brew install screen
