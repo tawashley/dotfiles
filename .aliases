@@ -39,6 +39,25 @@ alias gp="git push"
 alias gpb="git push -u origin"
 alias gs="git status"
 
+#Backstage
+
+# Backstage start
+alias bss="nx serve backstage-app"
+# Backstage start, with mocks
+alias bssm="enableMocks=true nx serve backstage-app"
+# Backstage check
+alias bsc="npx nx run-many -t typecheck --parallel --maxParallel=8 && npx nx run-many -t lint test build --parallel --maxParallel=4"
+# Backstage check
+alias bsl="npx nx run-many -t lint"
+# Backstage type check only
+alias bst="npx nx run-many -t typecheck --parallel --maxParallel=8"
+# Backstage Jest - run jest, in watch mode, in the currently directly
+alias bsj="npx jest --watchAll"
+# Backstage playwright
+alias bsp="nx run backstage-app:e2e:local --ui"
+# Backstage domain - cd directly to a domains
+alias bsd="cd ~/mac.code/backstage/libs/domains"
+
 function git_patch_create() {
     git diff > $1.patch && mv $1.patch $HOME/mac.code/_git-patch-files/$1.patch && echo "> Patch file '$1.patch' created in '$HOME/mac.code/_git-patch-files'"
 }
@@ -88,6 +107,12 @@ function kill_on_port() {
 }
 
 #seq 1 10 | xargs -I{} npm run backstop
+
+#npm
+alias ns="npm start"
+alias ni="npm install"
+alias nb="npm run build"
+alias nv="npm run verify"
 
 #yarn
 alias ys="yarn start"
