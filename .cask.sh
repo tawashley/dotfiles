@@ -22,7 +22,7 @@ brew install --cask beyond-compare
 # Browsers
 echo Installing browsers…
 brew install --cask firefox
-brew install --cask google-chrome
+#brew install --cask google-chrome
 
 # Additional apps
 echo Installing media apps…
