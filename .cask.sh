@@ -15,6 +15,7 @@ echo ""
 echo Installing dev apps…
 brew install --cask imageoptim
 brew install --cask iterm2
+brew install --cask ghostty
 brew install --cask visual-studio-code
 brew install --cask beyond-compare
 
@@ -32,13 +33,14 @@ brew install --cask vlc
 echo Installing productivity apps…
 brew install --cask slack
 brew install --cask rectangle
-brew install --cask alfred
 brew install --cask the-unarchiver
 brew install --cask monolingual
 brew install --cask path-finder
 brew install --cask appcleaner
 #brew install --cask ubersicht
 brew install --cask kap
+brew install --cask obsidian
+brew install --cask raycast
 
 # Clean up
 echo Cleaning up…
